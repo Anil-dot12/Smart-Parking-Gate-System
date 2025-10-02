@@ -1,11 +1,11 @@
 # ✨ Project Title:
 Smart-Parking-Gate-System
 ## Objectives:
- • Design a simple parking gate control system using Arduino.
- • Allow the user to open and close the gate with a single push button.
- • Provide clear visual indicators through an LCD display (GO / WAIT / STOP).
- • Use an RGB LED to indicate the gate status (Green for GO – Orange for WAIT – Red for STOP).
- • Practice integrating electronic components (Button, LCD, RGB LED, Servo) with Arduino programming.
+ + Design a simple parking gate control system using Arduino.
+ + Allow the user to open and close the gate with a single push button.
+ +  Provide clear visual indicators through an LCD display (GO / WAIT / STOP).
+ + Use an RGB LED to indicate the gate status (Green for GO – Orange for WAIT – Red for STOP).
+ + Practice integrating electronic components (Button, LCD, RGB LED, Servo) with Arduino programming.
 
  ## Problem:
 Many parking lots do not have automated gate control systems, which causes delays in entry and exit, especially during peak hours. Traditional systems are often expensive and complex to install. Therefore, this project was designed to provide a simplified and low-cost model that simulates a smart parking gate using basic electronic components that can be easily implemented by students and beginners.
@@ -29,18 +29,24 @@ When the button is pressed again, the screen will display “WAIT” with a coun
  
 ### Project Picture[^1]:
 ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
-# Schematic view
+### Schematic view
 ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/b5fda71c19b8c50934959d6be07211360c69751b/Schematic%20view.png)
+> [!NOTE]
+> The design connects the button → Arduino → Servo motor + RGB LED + LCD display.\
+> Synchronization was tested to ensure all indicators (GO / WAIT / STOP) work consistently with the gate movement.
 
-[^1]:The design connects the button → Arduino → Servo motor + RGB LED + LCD display. 
-Synchronization was tested to ensure all indicators (GO / WAIT / STOP) work consistently with the gate movement.
  
 ## Expected Results:
- **1. First button press → Gate opens + LCD shows “GO” + Green light.**
-  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/81cfead05f8775638fd63db268d58de6a8c44237/desine2.png)
- **2. Second button press → LCD shows “WAIT” with countdown (3–1) + yellow light.**
-  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/d0b4c13246dd9b408c614256cb32b601b71fea5d/desine3.png)
- **3. After countdown → LCD shows “STOP” + Red light + Gate closes.**
+ **1. First button press → Gate opens + LCD shows “GO” + Green light.**\
+ \
+  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/81cfead05f8775638fd63db268d58de6a8c44237/desine2.png)\
+  \
+ **2. Second button press → LCD shows “WAIT” with countdown (3–1) + yellow light.**\
+ \
+  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/d0b4c13246dd9b408c614256cb32b601b71fea5d/desine3.png)\
+  \
+ **3. After countdown → LCD shows “STOP” + Red light + Gate closes.**\
+ \
     ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/d0b4c13246dd9b408c614256cb32b601b71fea5d/desine4.png)
 
 
