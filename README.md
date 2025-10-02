@@ -33,4 +33,10 @@ When the button is pressed again, the screen will display “WAIT” with a coun
 The design connects the button → Arduino → Servo motor + RGB LED + LCD display. 
 Synchronization was tested to ensure all indicators (GO / WAIT / STOP) work consistently with the gate movement.
  
-
+## Expected Results:
+ 1. First button press → Gate opens + LCD shows “GO” + Green light.
+  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
+ 2. Second button press → LCD shows “WAIT” with countdown (3–1) + Orange light.
+  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
+ 3. After countdown → LCD shows “STOP” + Red light + Gate closes.
+    ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
