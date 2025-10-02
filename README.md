@@ -35,8 +35,8 @@ Synchronization was tested to ensure all indicators (GO / WAIT / STOP) work cons
  
 ## Expected Results:
  1. First button press → Gate opens + LCD shows “GO” + Green light.
-  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
+  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/81cfead05f8775638fd63db268d58de6a8c44237/desine2.png)
  2. Second button press → LCD shows “WAIT” with countdown (3–1) + Orange light.
-  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
+  ![Design]()
  3. After countdown → LCD shows “STOP” + Red light + Gate closes.
-    ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
+    ![Design]()
