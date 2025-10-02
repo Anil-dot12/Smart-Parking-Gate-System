@@ -24,5 +24,5 @@ When the button is pressed again, the screen will display “WAIT” with a coun
  + RGB LED (Red, Green, Orange)
  + Resistors, Jumper wires, Breadboard
  
-##Design:
+### Design:
 ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
