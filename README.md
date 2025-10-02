@@ -27,16 +27,112 @@ When the button is pressed again, the screen will display “WAIT” with a coun
  + RGB LED (Red, Green, Orange)
  + Resistors, Jumper wires, Breadboard
  
-### Design:
+### Project Picture:
 ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
 
 The design connects the button → Arduino → Servo motor + RGB LED + LCD display. 
 Synchronization was tested to ensure all indicators (GO / WAIT / STOP) work consistently with the gate movement.
  
 ## Expected Results:
- 1. First button press → Gate opens + LCD shows “GO” + Green light.
+ **1. First button press → Gate opens + LCD shows “GO” + Green light.**
   ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/81cfead05f8775638fd63db268d58de6a8c44237/desine2.png)
- 2. Second button press → LCD shows “WAIT” with countdown (3–1) + Orange light.
-  ![Design]()
- 3. After countdown → LCD shows “STOP” + Red light + Gate closes.
-    ![Design]()
+ **2. Second button press → LCD shows “WAIT” with countdown (3–1) + Orange light.**
+  ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/d0b4c13246dd9b408c614256cb32b601b71fea5d/desine3.png)
+ **3. After countdown → LCD shows “STOP” + Red light + Gate closes.**
+    ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/d0b4c13246dd9b408c614256cb32b601b71fea5d/desine4.png)
+
+# code:
+```
+#include <Servo.h>
+#include <LiquidCrystal_I2C.h>
+
+
+Servo myservo;
+LiquidCrystal_I2C myLcd(0x20,16,2);
+
+
+int R=2 , B=4 , G=5;
+int pb=6;
+
+void setup()
+{
+  myservo.attach(3);
+ myservo.write(0);
+  
+  myLcd.init();
+  myLcd.backlight();
+  
+  pinMode(R, OUTPUT);
+  pinMode(B, OUTPUT);
+  pinMode(G, OUTPUT);
+  
+  pinMode(pb,INPUT);
+}
+
+void loop()
+{
+  
+  if(digitalRead(pb)==1){
+    if(myservo.read()==90){
+  myLcd.clear();
+  Go();
+  myLcd.setCursor(7,0);
+  myLcd.print("Go");
+      delay(2000);}else{
+  
+  
+  myLcd.clear();
+  Wait();
+  myLcd.setCursor(6,0);
+  myLcd.print("Wait");
+  count();
+
+  
+  
+  
+  myLcd.clear();
+  Stop();
+  myLcd.setCursor(6,0);
+  myLcd.print("Stop");
+      delay(2000);}
+  
+  
+  }}
+
+
+
+void Go(){
+  if(digitalRead(R)==1){
+    digitalWrite(R, LOW);}
+  digitalWrite(G, HIGH);
+  myservo.write(0);}
+
+
+
+void Wait(){
+  digitalWrite(R, HIGH);
+  digitalWrite(G, HIGH);}
+
+
+void Stop(){
+  if(digitalRead(G)==1){
+    digitalWrite(G, LOW);}
+  digitalWrite(R, HIGH);
+  myservo.write(90);}
+
+void count(){
+  for(int i=3;i>=0;i--){
+  myLcd.setCursor(8,1);
+    
+     if(i==0){
+    myLcd.setCursor(8,1);
+      myLcd.print("  ");
+    delay(1000);
+       break;}
+    
+  myLcd.print(i);
+    delay(1000);}
+}
+```
+
+    
