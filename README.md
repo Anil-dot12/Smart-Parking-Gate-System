@@ -26,8 +26,8 @@ When the button is pressed again, the screen will display “WAIT” with a coun
  
 ### Design:
 ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
-```
+<b\>
  + The design connects the button → Arduino → Servo motor + RGB LED + LCD display. 
  + Synchronization was tested to ensure all indicators (GO / WAIT / STOP) work consistently with the gate movement.
  
-```
+
