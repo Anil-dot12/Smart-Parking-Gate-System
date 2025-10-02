@@ -7,6 +7,9 @@ Smart-Parking-Gate-System
  • Use an RGB LED to indicate the gate status (Green for GO – Orange for WAIT – Red for STOP).
  • Practice integrating electronic components (Button, LCD, RGB LED, Servo) with Arduino programming.
 
+ ## Problem:
+Many parking lots do not have automated gate control systems, which causes delays in entry and exit, especially during peak hours. Traditional systems are often expensive and complex to install. Therefore, this project was designed to provide a simplified and low-cost model that simulates a smart parking gate using basic electronic components that can be easily implemented by students and beginners.
+
  ## Hypothesis:
  If the button is pressed the first time, the gate will open, the green light will turn on, and the screen will display “GO”.
 When the button is pressed again, the screen will display “WAIT” with a countdown (3–1), the orange light will turn on, and then the gate will close, the screen will display “STOP”, and the red light will turn on.
@@ -26,8 +29,8 @@ When the button is pressed again, the screen will display “WAIT” with a coun
  
 ### Design:
 ![Design](https://github.com/Anil-dot12/Smart-Parking-Gate-System/blob/8ebbf9e908fc0787e2db71cd3441e8060a309252/Design1.png)
-<b\>
- + The design connects the button → Arduino → Servo motor + RGB LED + LCD display. 
- + Synchronization was tested to ensure all indicators (GO / WAIT / STOP) work consistently with the gate movement.
+
+The design connects the button → Arduino → Servo motor + RGB LED + LCD display. 
+Synchronization was tested to ensure all indicators (GO / WAIT / STOP) work consistently with the gate movement.
  
 
