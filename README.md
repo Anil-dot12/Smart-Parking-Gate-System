@@ -17,10 +17,10 @@ When the button is pressed again, the screen will display “WAIT” with a coun
  + It is a useful educational application to understand microcontroller programming and integration with sensors and actuators.
 
  ## Hardware Stack:
- • Arduino UNO
- • Push Button
- • Servo Motor (for gate control)
- • LCD 16x2 Display
- • RGB LED (Red, Green, Orange)
- • Resistors, Jumper wires, Breadboard
+ + Arduino UNO
+ + Push Button
+ + Servo Motor (for gate control)
+ + LCD 16x2 Display
+ + RGB LED (Red, Green, Orange)
+ + Resistors, Jumper wires, Breadboard
  
