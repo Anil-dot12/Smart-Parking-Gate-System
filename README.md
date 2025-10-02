@@ -1,5 +1,5 @@
-# Smart-Parking-Gate-System
-
+# ✨ Project Title:
+Smart-Parking-Gate-System
 # Objectives:
  • Design a simple parking gate control system using Arduino.
  • Allow the user to open and close the gate with a single push button.
