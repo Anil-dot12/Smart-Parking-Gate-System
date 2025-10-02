@@ -24,3 +24,5 @@ When the button is pressed again, the screen will display “WAIT” with a coun
  + RGB LED (Red, Green, Orange)
  + Resistors, Jumper wires, Breadboard
  
+##Design:
+![Design]()
