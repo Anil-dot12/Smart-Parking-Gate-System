@@ -1,4 +1,4 @@
-# ✨ Project Title:
+# ✨ Project:
 Smart-Parking-Gate-System
 ## Objectives:
  + Design a simple parking gate control system using Arduino.
